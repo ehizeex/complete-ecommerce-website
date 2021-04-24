@@ -4,14 +4,12 @@ import Typical from "react-typical";
 import "./feature.css";
 import { featuredProducts } from "../../actions/productActions";
 
-import { Container, Card, Col, Row } from "react-bootstrap";
+import { Card,  } from "react-bootstrap";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import { HomeWrapper } from "./featuredProductStyles";
-import styled from "styled-components";
-import { bold } from "colors";
+
 
 const FeaturedProducts = () => {
 
@@ -54,7 +52,7 @@ const FeaturedProducts = () => {
 
   const dispatch = useDispatch();
   // we get the product to be rendered on the ui by grabbing the product fron the global state using useSelector
-  const { loading, product, error } = useSelector((state) => state.featured);
+  const {product} = useSelector((state) => state.featured);
   useEffect(() => {
     dispatch(featuredProducts());
   }, [dispatch]);
@@ -90,7 +88,7 @@ const FeaturedProducts = () => {
         <Link to="/cart" className="float-right text-uppercase" to="/">
           {" "}
           <img
-            src="./images/shoppingcart.png"
+            src="./images/shoppingcart.png" alt ='shoppingcart'
             style={{ height: 30, width: 30 }}
           />
         </Link>

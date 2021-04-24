@@ -12,9 +12,7 @@ const Header = () => {
   const alert = useAlert();
   const dispatch = useDispatch();
   const { cartItems } = useSelector(state => state.cart)
-  const [avatarPreview, setAvatarPreview] = useState(
-    "/images/default_avatar.jpg"
-  );
+
   const { user, loading } = useSelector((state) => state.auth);
 
   const logoutHandler = () => {
@@ -29,7 +27,7 @@ const Header = () => {
          <Navbar/>
          
             <Link to="/">
-              <img src="./images/shopit_logo.png" style={{height:40, width:'60'}}/>
+              <img src="./images/shopit_logo.png" alt='profilehere' style={{height:40, width:'60'}}/>
             </Link>
          
       

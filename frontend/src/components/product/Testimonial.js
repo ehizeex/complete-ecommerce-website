@@ -35,14 +35,14 @@ const options = {
 
 const Testimonial = () => {
     const dispatch = useDispatch();
-    const [productId, setProductId] = useState("");
-    const { error, reviews } = useSelector((state) => state.productReviews);
+    const [productId] = useState("");
+    const {  reviews } = useSelector((state) => state.productReviews);
 
     useEffect(() => {
        
         dispatch(getProductReviews(productId));
     
-      }, [dispatch]);
+      }, [dispatch,productId]);
 
     return (
         <>
@@ -82,7 +82,7 @@ const Testimonial = () => {
                               </ul>
                            </div>
                            <div className="client-info">
-                              <img src="https://res.cloudinary.com/ehizeex-shop/image/upload/v1614276026/avatars/hfx9vms3zqxu7mrfrwuh.jpg" style={{height: 70, width:70, borderRadius: 35}}/>
+                              <img src="https://res.cloudinary.com/ehizeex-shop/image/upload/v1614276026/avatars/hfx9vms3zqxu7mrfrwuh.jpg" alt='' style={{height: 70, width:70, borderRadius: 35}}/>
                               <h5>{reviews.name}</h5>
                               <p> </p>
                            </div>

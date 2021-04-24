@@ -7,7 +7,7 @@ const Product = ({ product, col }) => {
         <div className="product">
 
         <div className="product-image"> 
-        <a href="" className="image"> <img src={product.images[0].url}  className="pic-1"/> { !product.images[1] ?<img src={product.images[0].url} className="pic-2"/> : <img src={product.images[1].url} className="pic-2"/> }</a> 
+        <a href="" className="image"> <img src={product.images[0].url}  className="pic-1"/> { !product.images[1] ?<img src={product.images[0].url}  alt='product is loading' className="pic-2"/> : <img src={product.images[1].url} alt='product is loading' className="pic-2"/> }</a> 
         <Link to={`/product/${product._id}`}>
         <a href="" className="cart">Add to Cart</a>
         </Link>

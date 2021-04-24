@@ -10,7 +10,7 @@ import {getProductDetails, clearErrors,  newReview,} from '../../actions/product
 import {addItemToCart} from '../../actions/cartActions'
 // import { NEW_REVIEW_RESET } from "../../constants/productConstant";
 import {NEW_REVIEW_RESET} from '../../constants/productContants'
-import Footer from "../layout/Footer";
+
 
 
 const ProductDetails = ({ match }) => {

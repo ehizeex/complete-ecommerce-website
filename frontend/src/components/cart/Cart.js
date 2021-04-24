@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
-import { useAlert } from 'react-alert'
+
 import { useDispatch, useSelector } from 'react-redux'
 
 
@@ -48,7 +48,7 @@ const Cart = ({ history }) => {
               <div className='col-12'  style={{height:240, width:240, display: "flex",
               justifyContent: "center",
               alignItems: "center"}}>
-                <img src="./images/emptycart.png" />
+                <img src="./images/emptycart.png" alt='cartimage'/>
           </div>
                 : (
                 <Fragment>

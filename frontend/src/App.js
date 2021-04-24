@@ -8,7 +8,7 @@ import { loadStripe } from '@stripe/stripe-js'
 
 
 import Header from './components/layout/Header'
-import Footer from './components/layout/Footer'
+// import Footer from './components/layout/Footer'
 import Home from './components/Home'
 import ProductDetails from './components/product/ProductDetails'
 import ContactUs from './components/contactUs/ContactUs'
@@ -51,7 +51,7 @@ import ProtectedRoute from './components/route/ProtectedRoute'
 
 import {loadUser} from './actions/userAction'
 import store from './store'
-import Testimonial from './components/product/Testimonial'
+// import Testimonial from './components/product/Testimonial'
 import FeaturedProducts from './components/product/FeaturedProducts'
 
 
@@ -71,7 +71,7 @@ function App() {
     }
     getStripApiKey();
   }, [])
-  const { user, isAuthenticated, loading } = useSelector(state => state.auth)
+  // const { user, isAuthenticated, loading } = useSelector(state => state.auth)
 
   return (
     <Router>

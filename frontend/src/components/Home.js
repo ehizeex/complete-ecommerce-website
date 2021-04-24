@@ -2,23 +2,22 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useAlert } from "react-alert";
 import Pagination from "react-js-pagination";
-import { Link } from "react-router-dom";
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 
 import "../App.css";
 
 import { getProducts } from "../actions/productActions";
-import { productsReducer } from "../reducers/productReducers";
+
 import Loader from "./layout/Loader";
 import MetaData from "./layout/MetaData";
 import Products from "./product/Products";
-import Testimonial from "./product/Testimonial";
+
 import FeaturedProducts from "./product/FeaturedProducts";
 import Footer from "./layout/Footer";
-import Product from "./product/Products";
+
 import ProductAdvert from "./product/ProductAdvert";
-import NewsLetter from "./layout/NewsLetter";
+
 
 import ContactGallery from "./contactUs/ContactGallery";
 import ScrollUp from "./layout/ScrollUp";

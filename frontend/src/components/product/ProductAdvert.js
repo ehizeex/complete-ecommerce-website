@@ -64,7 +64,7 @@ const ProductAdvert = () => {
                   {" "}
                   <i className="fa fa-youtube"></i>youtube
                 </a>
-                <a href="#" className="twitter">
+                <a href="https://twitter.com/home" className="twitter">
                   {" "}
                   <i className="fa fa-twitter"></i> twitter{" "}
                 </a>

@@ -27,7 +27,7 @@ function Navbar() {
     <div onClick={showSidebar}>
       <li className="navbar-togglez">
         <a>
-          <Link to="#" className="menu-bars">
+          <Link to="/" className="menu-bars">
             <FaIcons.FaBars />
           </Link>
         </a>

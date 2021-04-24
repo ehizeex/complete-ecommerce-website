@@ -6,7 +6,7 @@ import {Provider} from 'react-redux'
 import store from './store'
 import { positions, transitions, Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic'
-import fileUpload from 'express-fileupload';
+// import fileUpload from 'express-fileupload';
 
 const options = {
   timeout: 5000,

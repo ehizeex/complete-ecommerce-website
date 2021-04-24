@@ -3,12 +3,11 @@ import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
 import * as IoIcons from 'react-icons/io'
 import {Link} from 'react-router-dom'
-import { icons } from 'react-icons/lib'
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 
 const Item = () => {
     
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     const { cartItems } = useSelector(state => state.cart)
 
     return (
