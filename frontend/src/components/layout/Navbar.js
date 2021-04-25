@@ -26,11 +26,11 @@ function Navbar() {
   return (
     <div onClick={showSidebar}>
       <li className="navbar-togglez">
-        <a>
+       
           <Link to="/" className="menu-bars">
             <FaIcons.FaBars />
           </Link>
-        </a>
+       
       </li>
       <div
       
@@ -40,11 +40,11 @@ function Navbar() {
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>
             <li className="navbar-toggle">
-              <a>
+             
                 <Link to="#" className="menu-bars">
                   <AiIcons.AiFillCloseCircle />
                 </Link>
-              </a>
+             
             </li>
             {SidebarData.map((item, index) => {
               return (

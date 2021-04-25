@@ -48,7 +48,7 @@ const Footer = () => {
           <div className='col-md-3 col-sm-6 col-xs-12 segment-four sm-bm-30 '  style={{marginTop : 10}}>
           <h2>Our News Letter</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
-          <img src="./images/rider.jpeg"  style={{height: 100, width: 100, borderRadius:50}}/>
+          <img src="./images/rider.jpeg" alt='rider loading' style={{height: 100, width: 100, borderRadius:50}}/>
           </div>
 
         </div>
